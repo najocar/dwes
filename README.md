@@ -31,3 +31,19 @@ $nulo = null;
 
 echo $cadena; // Muestra "Hola, PHP!"
 ?>
+```
+
+## Operaciones con Tipos de Datos
+
+Ejemplos de operaciones en PHP:
+
+- **Operaciones aritméticas**: suma (`+`), resta (`-`), multiplicación (`*`), división (`/`).
+- **Concatenación de cadenas**: Para unir cadenas de texto, se usa el operador `.`.
+
+```php
+<?php
+$nombre = "Ana";
+$edad = 25;
+echo "Hola, " . $nombre . ". Tienes " . $edad . " años."; // Resultado: Hola, Ana. Tienes 25 años.
+?>
+```
