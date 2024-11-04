@@ -1,0 +1,69 @@
+html, body {
+    font-family: system-ui;
+    margin: 0px;
+}
+
+.viajes a {
+    background-color: #ff6384;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.viajes a:hover {
+    background-color: #ff6384;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+nav ul{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style-type: none;
+    margin: 0px;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+h1 {
+    text-align: center;
+}
+
+.viajes {
+    display: flex;
+    justify-content: center;
+}
+
+.viajes div {
+    width: 80%;
+}
+
+
+
+.viajes ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.viajes img {
+    width: 300px;
+    height: 200px;
+}

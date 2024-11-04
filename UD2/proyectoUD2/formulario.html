@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Castro - Contacto</title>
+    <style>
+        html,
+        body {
+            font-family: system-ui;
+            margin: 0px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f2f2f2;
+        }
+
+        nav ul {
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            list-style-type: none;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 15px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: rgb(218, 218, 218);
+        }
+
+        .contact-form {
+            font-family: system-ui;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+        }
+
+        .contact-form .heading {
+            font-size: 24px;
+            color: black;
+            margin-bottom: 12px;
+            font-weight: bold;
+            display: block;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            box-shadow: 0 0 5px #ff6384;
+        }
+
+        .contact-form button[type="submit"] {
+            background-color: #ff6384;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form button[type="submit"]:hover {
+            transform: scale(1.01);
+            transition: transform 0.1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body
+    style="background-image: url('https://img.rtve.es/imagenes/consejos-viajar-avion-ahorrar/1634194794236.jpg'); backdrop-filter: blur(10px); height: 100vh;">
+    <nav>
+        <ul>
+            <li><a href="./index.php">Inicio</a></li>
+            <li><a href="./formulario.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section style="display: flex; justify-content: center; margin-top: 80px;">
+        <div class="contact-form">
+            <span class="heading">Contacta con nosotros</span>
+            <form name="input" action="procesa_formulario.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
